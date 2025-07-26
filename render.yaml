@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: clin-assist-backend
+    env: node
+    region: singapore
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
